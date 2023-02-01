@@ -1,0 +1,19 @@
+.pizzaAll {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  
+  .pizzaAllForm {
+    /* margin-right: 50px; */
+    padding: 20px;
+  }
+  
+  .pizzaAllForm div p {
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  
