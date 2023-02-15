@@ -8,7 +8,7 @@ const validations = yup.object().shape({
     .required("Zorunlu alan"),
   adres: yup
     .string()
-    .min(10, "2 karakterden az olamaz")
+    .min(10, "10 karakterden az olamaz")
     .required("Zorunlu alan"),
   boyut: yup.string().required("Lütfen bir pizza boyutu seçin"),
   kalinlik: yup.string().required("Lütfen bir hamur kalınlığı seçin"),

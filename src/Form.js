@@ -10,7 +10,7 @@ const SCDiv = styled.div`
 `;
 
 const SCForm = styled.form`
-  background-color: peru;
+  background-color: BurlyWood;
 `;
 
 const SCerors = styled.div`
@@ -34,6 +34,7 @@ const SCPizzaSelect = styled.select`
   width: 200px;
   height: 25px;
 `;
+
 //handleBlur: inputtan ayrıldığımızda hatayı veriyor.
 //touched: kullanıcı daha önce oraya fokus olmşmu girmişmi
 
@@ -64,11 +65,11 @@ function Formson(props) {
   //   console.log(errors);
   // console.log(values)
 
-const {setData}=props
+  const { setData } = props;
 
-  setData(values)
-  
-// console.log("yeni data",setData)
+  setData(values);
+
+  // console.log("yeni data",setData)
 
   return (
     <>
@@ -117,7 +118,7 @@ const {setData}=props
               onChange={handleChange}
             />
             {errors.adres && touched.adres && <SCerors>{errors.adres}</SCerors>}
-          </div>
+          </div><br/>
           <hr />
           <hr />
           <hr />
@@ -146,8 +147,14 @@ const {setData}=props
               <SCerors>{errors.pizzaSecim}</SCerors>
             )}
             <h3>Pizza Boyutu</h3>
+
             <div>
-              <input type="radio" name="boyut" onChange={handleChange} />
+              <input
+                htmlFor="kucuk"
+                type="radio"
+                name="boyut"
+                onChange={handleChange}
+              />
               <span> Küçük</span>
             </div>
             <div>
@@ -266,13 +273,8 @@ const {setData}=props
           <hr />
           <div>
             {/* <button type="submit" >Sipariş Oluştur</button> */}
-            <Link to="/siparis" >
-              Siparişi Tamamla! 
-            </Link>
+            <Link to="/siparis">Siparişi Tamamla!</Link>
           </div>
-             
-
-         
         </SCForm>
       </SCDiv>
     </>

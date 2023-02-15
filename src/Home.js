@@ -4,14 +4,13 @@ import PizzaAll from "./pizzaAll/PizzaAll";
 import "./App.css";
 import styled from "styled-components";
 
-const SCDisdiv = styled.div`
-  margin: 0 auto;
-  background-color: rgb(212, 209, 209);
+const SCDisdiv = styled.div` 
+  background-color: BurlyWood;
 `;
 
 const SCImg = styled.img`
-  margin-left: 550px;
-  width: 400px;
+  width: 50%;
+ height: 300px;
 `;
 
 const SCH1=styled.h1`
@@ -20,6 +19,15 @@ margin-top: 0;
 `
 const SCDivLink=styled.div`
 text-align: center;
+padding: 30px;
+height: 35px;
+background-color: #d0c0c0;
+text-decoration-color: antiquewhite;
+margin-top: 25px;
+`
+
+const SCPizzaAll= styled.div`
+padding: 10px;
 
 `
 const bigImg =
@@ -40,9 +48,9 @@ const Home = () => {
           Sipariş Oluştur!
         </Link>
       </SCDivLink>
-      <div>
+      <SCPizzaAll>
         <PizzaAll />
-      </div>
+      </SCPizzaAll>
     </SCDisdiv>
   );
 };

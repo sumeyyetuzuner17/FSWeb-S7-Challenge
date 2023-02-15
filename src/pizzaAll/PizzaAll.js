@@ -11,7 +11,7 @@ const PizzaAll = () => {
       </div>
       <div className="pizzaAll">
         {data.map((pizza) => (
-          <PizzaItem pizza={pizza} />
+          <PizzaItem key={pizza.id} pizza={pizza} />
         ))}
       </div>
     </div>
