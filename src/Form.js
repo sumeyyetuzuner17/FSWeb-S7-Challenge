@@ -275,6 +275,7 @@ function Formson(props) {
             {/* <button type="submit" >Sipariş Oluştur</button> */}
             <Link to="/siparis">Siparişi Tamamla!</Link>
           </div>
+             <hr/><hr/><hr/>
         </SCForm>
       </SCDiv>
     </>
